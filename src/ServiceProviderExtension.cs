@@ -3,6 +3,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Soenneker.Extensions.ServiceProvider;
 
+/// <summary>
+/// A collection of useful IServiceProvider methods
+/// </summary>
 public static class ServiceProviderExtension
 {
     /// <summary>
