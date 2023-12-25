@@ -8,5 +8,5 @@
 ## Installation
 
 ```
-Install-Package Soenneker.Extensions.ServiceProvider
+dotnet add package Soenneker.Extensions.ServiceProvider
 ```
