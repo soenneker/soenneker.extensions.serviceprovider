@@ -10,7 +10,7 @@ public static class ServiceProviderExtension
 {
     /// <summary>
     /// Wraps <see cref="IServiceProvider.GetService"/> with null forgiving operand... <para/>
-    /// Microsoft.Extensions.DependencyInjection namespace isn't correctly auto detected in Visual Studio...
+    /// Microsoft.Extensions.DependencyInjection namespace isn't correctly auto-detected in Visual Studio...
     /// </summary>
     public static T Get<T>(this IServiceProvider serviceProvider)
     {
