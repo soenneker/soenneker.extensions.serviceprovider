@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\Soenneker.Extensions.ServiceProvider.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Extensions.ServiceProvider.csproj" />
     </ItemGroup>
 
 </Project>
