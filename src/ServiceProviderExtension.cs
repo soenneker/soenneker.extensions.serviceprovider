@@ -16,7 +16,7 @@ public static class ServiceProviderExtension
     {
         var service = serviceProvider.GetService<T>();
 
-        if (service == null)
+        if (service is null)
         {
             throw new NullReferenceException($@"Service ({typeof(T).Name}) is not currently registered on the provider.
                 1. Check to see if the service is registered
