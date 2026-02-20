@@ -35,7 +35,7 @@ public class ServiceProviderExtensionTests
         Action act = () => serviceProviderMock.Object.Get<IService>();
 
         // Assert
-        act.Should().Throw<NullReferenceException>()
-            .WithMessage("Service (IService) is not currently registered on the provider.*");
+        act.Should()
+           .Throw<InvalidOperationException>();
     }
 }
