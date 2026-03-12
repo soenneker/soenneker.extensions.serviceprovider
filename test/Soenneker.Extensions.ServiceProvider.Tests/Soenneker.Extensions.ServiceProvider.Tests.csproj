@@ -16,7 +16,7 @@
         <PackageReference Include="AwesomeAssertions" Version="9.4.0" /><PackageReference Include="Moq" Version="4.20.72" /><PackageReference Include="xUnit.v3" Version="3.2.2" /></ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Extensions.ServiceProvider.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Extensions.ServiceProvider\Soenneker.Extensions.ServiceProvider.csproj" />
     </ItemGroup>
 
     <ItemGroup>
