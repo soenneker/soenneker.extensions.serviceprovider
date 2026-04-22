@@ -1,14 +1,13 @@
-﻿using System;
+using System;
 using AwesomeAssertions;
 using Moq;
 using Soenneker.Extensions.ServiceProvider.Tests.Abstract;
-using Xunit;
 
 namespace Soenneker.Extensions.ServiceProvider.Tests;
 
 public class ServiceProviderExtensionTests
 {
-    [Fact]
+    [Test]
     public void Get_ShouldReturnService_WhenServiceIsRegistered()
     {
         // Arrange
@@ -24,7 +23,7 @@ public class ServiceProviderExtensionTests
             .And.BeAssignableTo<IService>();
     }
 
-    [Fact]
+    [Test]
     public void Get_ShouldThrowException_WhenServiceIsNotRegistered()
     {
         // Arrange
