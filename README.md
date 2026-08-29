@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.extensions.serviceprovider/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.extensions.serviceprovider/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.ServiceProvider
-Resolves a required service from `IServiceProvider` with a diagnostic failure message tailored to integration-test setup.
+Extension methods for resolving and validating services through `IServiceProvider`, with diagnostics suited to application and integration-test setup.
 
 ## Installation
 
