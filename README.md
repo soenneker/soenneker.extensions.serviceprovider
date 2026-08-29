@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.extensions.serviceprovider/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.extensions.serviceprovider/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.ServiceProvider
-A collection of useful IServiceProvider methods.
+Resolves a required service from `IServiceProvider` with a diagnostic failure message tailored to integration-test setup.
 
 ## Installation
 
@@ -12,15 +12,14 @@ A collection of useful IServiceProvider methods.
 dotnet add package Soenneker.Extensions.ServiceProvider
 ```
 
-## Quick start
+## Usage
 
 ```csharp
 using Soenneker.Extensions.ServiceProvider;
 
-// Given an existing IServiceProvider named serviceProvider:
-var result = serviceProvider.Get();
+IMyService service = serviceProvider.Get<IMyService>();
 ```
 
-## Common operations
+`Get<T>()` returns the registered instance when it is assignable to `T`. A missing or incompatible registration throws `InvalidOperationException` with checks for service registration, test collections, fixtures, startup types, and factories. A null provider throws `ArgumentNullException`.
 
-- `Get()` - Retrieves a service of the specified type from the service provider. Throws an exception if the service is not registered. Returns an instance of type T obtained from the service provider.
+This is similar to `GetRequiredService<T>()`, but its error text is specifically useful in Soenneker integration tests.
